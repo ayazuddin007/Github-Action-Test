@@ -10,6 +10,8 @@ jobs:
         run: echo "Hello World"
       - name: echo name
         run: echo "Welcome Ayaz"
+      - name: echo hostname
+        run: echo "$(hostname)"
       - name: multiline script
         run: |
           node -v
