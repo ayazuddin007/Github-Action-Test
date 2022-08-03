@@ -1,0 +1,8 @@
+2022-08-03T12:06:41.9818189Z ##[section]Starting: Prepare job run-shell-commands
+2022-08-03T12:06:41.9822060Z Evaluating strategy
+2022-08-03T12:06:41.9822265Z Creating job '__default'
+2022-08-03T12:06:41.9822512Z Evaluating timeout
+2022-08-03T12:06:41.9822536Z Evaluating cancel timeout
+2022-08-03T12:06:41.9822565Z Evaluating continue on error
+2022-08-03T12:06:41.9822595Z Evaluating target
+2022-08-03T12:06:41.9823959Z ##[section]Finishing: Prepare job run-shell-commands

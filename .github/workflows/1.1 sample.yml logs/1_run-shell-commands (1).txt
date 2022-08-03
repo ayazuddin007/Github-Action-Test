@@ -1,0 +1,51 @@
+2022-08-03T12:06:44.5663812Z Requested labels: ubuntu-latest
+2022-08-03T12:06:44.5663854Z Job defined at: ayazuddin007/Github-Action-Test/.github/workflows/1. sample.yml@refs/heads/main
+2022-08-03T12:06:44.5663870Z Waiting for a runner to pick up this job...
+2022-08-03T12:06:44.9708904Z Job is waiting for a hosted runner to come online.
+2022-08-03T12:06:50.2775543Z Job is about to start running on the hosted runner: Hosted Agent (hosted)
+2022-08-03T12:06:52.8250234Z Current runner version: '2.294.0'
+2022-08-03T12:06:52.8280684Z ##[group]Operating System
+2022-08-03T12:06:52.8281140Z Ubuntu
+2022-08-03T12:06:52.8281402Z 20.04.4
+2022-08-03T12:06:52.8281745Z LTS
+2022-08-03T12:06:52.8281972Z ##[endgroup]
+2022-08-03T12:06:52.8282274Z ##[group]Virtual Environment
+2022-08-03T12:06:52.8282617Z Environment: ubuntu-20.04
+2022-08-03T12:06:52.8282889Z Version: 20220729.1
+2022-08-03T12:06:52.8283408Z Included Software: https://github.com/actions/virtual-environments/blob/ubuntu20/20220729.1/images/linux/Ubuntu2004-Readme.md
+2022-08-03T12:06:52.8284024Z Image Release: https://github.com/actions/virtual-environments/releases/tag/ubuntu20%2F20220729.1
+2022-08-03T12:06:52.8284405Z ##[endgroup]
+2022-08-03T12:06:52.8284725Z ##[group]Virtual Environment Provisioner
+2022-08-03T12:06:52.8285097Z 1.0.0.0-main-20220725-1
+2022-08-03T12:06:52.8285363Z ##[endgroup]
+2022-08-03T12:06:52.8286257Z ##[group]GITHUB_TOKEN Permissions
+2022-08-03T12:06:52.8287036Z Actions: write
+2022-08-03T12:06:52.8287576Z Checks: write
+2022-08-03T12:06:52.8287915Z Contents: write
+2022-08-03T12:06:52.8288530Z Deployments: write
+2022-08-03T12:06:52.8288901Z Discussions: write
+2022-08-03T12:06:52.8289223Z Issues: write
+2022-08-03T12:06:52.8289541Z Metadata: read
+2022-08-03T12:06:52.8289867Z Packages: write
+2022-08-03T12:06:52.8290318Z Pages: write
+2022-08-03T12:06:52.8290710Z PullRequests: write
+2022-08-03T12:06:52.8291159Z RepositoryProjects: write
+2022-08-03T12:06:52.8291546Z SecurityEvents: write
+2022-08-03T12:06:52.8291935Z Statuses: write
+2022-08-03T12:06:52.8292321Z ##[endgroup]
+2022-08-03T12:06:52.8296467Z Secret source: Actions
+2022-08-03T12:06:52.8297228Z Prepare workflow directory
+2022-08-03T12:06:52.9265788Z Prepare all required actions
+2022-08-03T12:06:53.0951165Z ##[group]Run echo "Hello World"
+2022-08-03T12:06:53.0951754Z [36;1mecho "Hello World"[0m
+2022-08-03T12:06:53.1905977Z shell: /usr/bin/bash -e {0}
+2022-08-03T12:06:53.1906493Z ##[endgroup]
+2022-08-03T12:06:53.2453962Z Hello World
+2022-08-03T12:06:53.2637446Z ##[group]Run node -v
+2022-08-03T12:06:53.2637937Z [36;1mnode -v[0m
+2022-08-03T12:06:53.2638361Z [36;1mnpm -v  [0m
+2022-08-03T12:06:53.2743442Z shell: /usr/bin/bash -e {0}
+2022-08-03T12:06:53.2743986Z ##[endgroup]
+2022-08-03T12:06:53.3643004Z v16.16.0
+2022-08-03T12:06:54.0046158Z 8.11.0
+2022-08-03T12:06:54.0251148Z Cleaning up orphan processes
