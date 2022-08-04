@@ -1,0 +1,16 @@
+name: Ayaz
+age: 30
+address: "Nagpur"
+active: true
+key:
+  key1: value
+  key2: 30
+array:
+  - item1
+  - item2
+  - item3
+objectArray:
+  - key: value
+    key1: value1
+  - key: value
+    key2: value2 
