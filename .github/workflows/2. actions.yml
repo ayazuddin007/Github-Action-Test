@@ -16,10 +16,15 @@ jobs:
           echo "${{ github.token }}"
       - name: Checkout
         uses: actions/checkout@v3
+      - name: Fetch history for all tags and branches
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0  
       - name: List Files after Checkout
         run: |
           pwd
           ls -a
+       
       - name: Simple JS Action
         id: greet
         uses: actions/hello-world-javascript-action@v1.1
