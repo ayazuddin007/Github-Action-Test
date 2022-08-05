@@ -29,8 +29,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: PayLoad
-       # run: echo "${{github.event.client_payload.env}}"
-        run: echo "${github.event.client_payload.env}"
+        run: echo "${{github.event.client_payload.env}}"
       - name: List Files
         run: |
           pwd
