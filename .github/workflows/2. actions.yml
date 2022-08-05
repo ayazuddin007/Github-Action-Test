@@ -15,8 +15,8 @@ on:
   #     - "**.js"        # when you push a js file
   #     - "!filename.js" # Ignore filename.js file
 
-  # repository_dispatch:
-  #   types: [build]
+  repository_dispatch:
+    types: [build]
   # schedule:
   #  - cron: '0/5 * * * *'
     
@@ -29,7 +29,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: PayLoad
-        run: echo "${{github.event.client_payload.env}}"
+       # run: echo "${{github.event.client_payload.env}}"
+        run: echo "${github.event.client_payload.env}"
       - name: List Files
         run: |
           pwd
