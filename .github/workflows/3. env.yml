@@ -15,8 +15,8 @@ jobs:
           ls -a
           git init
           git remote add origin "https://$GIHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}github.com/$GITHUB_REPOSITORY.git"
-          git config --gobal --user.name "my-bot"
-          git config --gobal --user.email "my-bot@bot.com"
+          git config --gobal user.name "my-bot"
+          git config --gobal user.email "my-bot@bot.com"
           git fetch
           git checkout main
           git branch --set-upstream-to=origin/main
