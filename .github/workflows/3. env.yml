@@ -10,11 +10,12 @@ jobs:
       issues: write 
     steps:
       - name: Push a random file
-        run: |
-          pwd
-          ls -a
-          git pull "https://${GITHUB_ACTOR}:${{secrets.GITHUB_TOKEN}}@github.com/${GITHUB_REPOSITORY}.git"
-          ls -a
+       # run: |
+         # pwd
+          #ls -a
+          
+          #git pull "https://${GITHUB_ACTOR}:${{secrets.GITHUB_TOKEN}}@github.com/${GITHUB_REPOSITORY}.git"
+          #ls -a
           # git clone "https://github.com/${GITHUB_REPOSITORY}.git"
           # git init
           # git remote add origin "https://${GITHUB_ACTOR}:${{secrets.GITHUB_TOKEN}}@github.com/${GITHUB_REPOSITORY}.git"
@@ -32,6 +33,26 @@ jobs:
           # git branch -m main
           # git remote set-url origin "https://${GITHUB_ACTOR}:${{secrets.GITHUB_TOKEN}}@github.com/${GITHUB_REPOSITORY}.git"
           # git push "https://${GITHUB_ACTOR}:${{secrets.GITHUB_TOKEN}}@github.com/${GITHUB_REPOSITORY}.git" --all
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false # otherwise, the token used is the GITHUB_TOKEN, instead of your personal access token.
+          fetch-depth: 0 # otherwise, there would be errors pushing refs to the destination repository.
+      - name: Create local changes
+        run: |
+          ls -a
+          echo $RANDOM >> random.txt
+          ls -a
+      - name: Commit files
+        run: |
+          git config --local user.email "s.ayazuddin007@gmail.com"
+          git config --local user.name "ayazuddin007"
+          git commit -m "random file" -a
+      - name: Push changes
+        uses: ad-m/github-push-action@master
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          branch: ${{ github.ref }}
+      
       - name: Create issue using REST API
         run: |
           curl --request POST \
