@@ -21,8 +21,8 @@ jobs:
           ls -a
       - name: Commit files
         run: |
-          git config --local user.email "s.ayazuddin007@gmail.com"
-          git config --local user.name "ayazuddin007"
+          git config --global user.email "s.ayazuddin007@gmail.com"
+          git config --global user.name "ayazuddin007"
           git add .
           git commit -m "random file" -a
       - name: Push changes
