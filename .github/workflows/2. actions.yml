@@ -14,6 +14,8 @@ jobs:
   run-github-workflow:
     runs-on: ubuntu-latest
     steps:
+      - name: PayLoad
+        run: echo "${{github.event.client_payload.env}}"
       - name: List Files
         run: |
           pwd
@@ -21,7 +23,7 @@ jobs:
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
           echo $GITHUB_WORKSPACE
-          echo "${{ github.token }}"
+          echo "${{github.token}}"
       - name: Checkout
         uses: actions/checkout@v3
       - name: Fetch history for all tags and branches
