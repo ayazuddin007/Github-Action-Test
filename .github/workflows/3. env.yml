@@ -26,6 +26,7 @@ jobs:
           ls -a
           git add .
           git commit -m "random file"
+          git branch -M main
           git push
       - name: Create issue using REST API
         run: |
