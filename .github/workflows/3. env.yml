@@ -27,6 +27,7 @@ jobs:
           ls -a
           git add .
           git commit -m "random file"
+          git branch -m main
           git push "https://$GITHUB_ACTOR:${{secrets.GITHUB_TOKEN}}@github.com/$GITHUB_REPOSITORY.git" --all
       - name: Create issue using REST API
         run: |
